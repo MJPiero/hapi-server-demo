@@ -1,5 +1,4 @@
-const inert = require('inert');
-const vision = require('vision');
+
 const package = require('package');
 const hapiSwagger = require('hapi-swagger');
 
@@ -8,8 +7,6 @@ const hapiSwagger = require('hapi-swagger');
  * 配置成功 访问路由 /documentation
  */
 module.exports = [
-  inert,
-  vision,
   {
     plugin: hapiSwagger,
     options: {
